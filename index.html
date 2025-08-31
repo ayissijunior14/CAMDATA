@@ -902,6 +902,66 @@
                     </div>
                 </div>
             </div>
+            <!-- Pages d'informations -->
+        <div id="about-page" class="page">
+            <div class="verification-page">
+                <h2>À propos de l'application</h2>
+                <div class="about-content">
+                    <p>CAMDATA est une application de recharge en ligne qui vous permet d'acheter facilement des forfaits internet pour les opérateurs camerounais.</p>
+                    <p>Notre plateforme offre une interface intuitive et sécurisée pour gérer vos recharges et suivre votre consommation.</p>
+                    <p>Version: 1.0.0</p>
+                    <p>Développé par: Votre Société</p>
+                </div>
+                <button class="btn btn-primary" onclick="showPage('more-page')">Retour</button>
+            </div>
+        </div>
+
+        <div id="privacy-page" class="page">
+            <div class="verification-page">
+                <h2>Politique de confidentialité</h2>
+                <div class="privacy-content">
+                    <p>Chez CAMDATA, nous prenons la protection de vos données personnelles très au sérieux.</p>
+                    <h3>Données collectées</h3>
+                    <p>Nous collectons uniquement les informations nécessaires au traitement de vos transactions :</p>
+                    <ul>
+                        <li>Numéro de téléphone pour l'activation des forfaits</li>
+                        <li>Historique des transactions pour votre suivi</li>
+                    </ul>
+                    <h3>Utilisation des données</h3>
+                    <p>Vos données ne sont utilisées que pour :</p>
+                    <ul>
+                        <li>Traiter vos demandes de recharge</li>
+                        <li>Vous fournir un historique de vos transactions</li>
+                        <li>Améliorer nos services</li>
+                    </ul>
+                </div>
+                <button class="btn btn-primary" onclick="showPage('more-page')">Retour</button>
+            </div>
+        </div>
+
+        <div id="terms-page" class="page">
+            <div class="verification-page">
+                <h2>Conditions d'utilisation</h2>
+                <div class="terms-content">
+                    <p>En utilisant CAMDATA, vous acceptez les conditions suivantes :</p>
+                    <h3>Utilisation du service</h3>
+                    <p>Vous vous engagez à :</p>
+                    <ul>
+                        <li>Utiliser le service uniquement à des fins légales</li>
+                        <li>Fournir des informations exactes et complètes</li>
+                        <li>Respecter les droits de propriété intellectuelle</li>
+                    </ul>
+                    <h3>Responsabilités</h3>
+                    <p>CAMDATA s'engage à :</p>
+                    <ul>
+                        <li>Fournir un service fonctionnel et sécurisé</li>
+                        <li>Traiter vos transactions avec diligence</li>
+                        <li>Protéger vos données personnelles</li>
+                    </ul>
+                </div>
+                <button class="btn btn-primary" onclick="showPage('more-page')">Retour</button>
+            </div>
+        </div>
         </div>
 
         <!-- Page Événement spécial -->
@@ -1078,26 +1138,26 @@
                 </div>
                 
                 <div style="margin-top: 20px;">
-                    <div class="activity-item">
-                        <div>
-                            <i class="fas fa-info-circle" style="color: var(--primary-blue);"></i>
-                            <span>À propos de l'application</span>
-                        </div>
-                    </div>
-                    
-                    <div class="activity-item">
-                        <div>
-                            <i class="fas fa-shield-alt" style="color: var(--primary-blue);"></i>
-                            <span>Politique de confidentialité</span>
-                        </div>
-                    </div>
-                    
-                    <div class="activity-item">
-                        <div>
-                            <i class="fas fa-file-alt" style="color: var(--primary-orange);"></i>
-                            <span>Conditions d'utilisation</span>
-                        </div>
-                    </div>
+                    <div class="activity-item" onclick="showPage('about-page')" style="cursor: pointer;">
+    <div>
+        <i class="fas fa-info-circle" style="color: var(--primary-blue);"></i>
+        <span>À propos de l'application</span>
+    </div>
+</div>
+
+<div class="activity-item" onclick="showPage('privacy-page')" style="cursor: pointer;">
+    <div>
+        <i class="fas fa-shield-alt" style="color: var(--primary-blue);"></i>
+        <span>Politique de confidentialité</span>
+    </div>
+</div>
+
+<div class="activity-item" onclick="showPage('terms-page')" style="cursor: pointer;">
+    <div>
+        <i class="fas fa-file-alt" style="color: var(--primary-orange);"></i>
+        <span>Conditions d'utilisation</span>
+    </div>
+</div>
                     
                     <div class="activity-item" onclick="clearHistory()" style="cursor: pointer;">
                         <div>

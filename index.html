@@ -1803,44 +1803,5 @@
             });
         });
     </script>
-    <style>
-  /* Style pour les aperçus d'image */
-  .link-preview {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .link-preview:hover::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 10px;
-    width: 200px;
-    height: 150px;
-    background-image: url('https://example.com/apercu-image.jpg');
-    background-size: cover;
-    background-position: center;
-    border: 2px solid #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    z-index: 1000;
-  }
-  
-  .link-preview:hover::before {
-    content: "";
-    position: absolute;
-    bottom: calc(100% - 5px);
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
-    width: 12px;
-    height: 12px;
-    background: #fff;
-    z-index: 1001;
-  }
-</style>
-
-<a href="https://upload.wikimedia.org/wikipedia/commons/d/d9/Camdata.png" class="link-preview">CAMDATA</a>
 </body>
 </html>

@@ -1255,10 +1255,10 @@
             'camtel': 'https://www.camtel.cm',
             'orange': 'https://www.orange.cm',
             'mtn': 'https://www.mtn.cm',
-            'fapshi': 'https://www.fapshi.cm'
+            'fapshi': 'https://www.fapshi.com'
         };
 
-        // Variables pour stocker la sélection actuelle
+        //  Variables pour stocker la sélection actuelle
         let selectedPackage = null;
         let selectedPrice = null;
         let selectedOperator = null;
@@ -1666,7 +1666,7 @@
             if (paymentLink) {
                  window.location.href = paymentLink; // Décommentez cette ligne pour activer la redirection
             } else {
-                alert("Lien de paiement non disponible pour ce forfait.");
+                window.location.href = paymentLink;
             }
         }
 

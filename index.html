@@ -691,7 +691,7 @@
                             <li><i class="fas fa-bolt"></i> Activation instantanée</li>
                             <li><i class="fas fa-clock"></i> 30 jours</li>
                             <li><i class="fas fa-database"></i> 10 Go de données en bloc</li>
-                            <li><i class="fas fa-phone"></i> 2000 F d´Appels vers MTN valides 24h</li>
+                            <li><i class="fas fa-phone"></i> 2 100 F d´Appels vers MTN valides 24h</li>
                         </ul>
                         <div class="package-price">2 100 FCFA</div>
                         <button class="btn btn-primary" onclick="selectPackage('MTN 10 Go / 30 Jours', 2100, 'mtn')">Choisir ce forfait</button>
@@ -906,7 +906,7 @@
 
         <!-- Page Événement spécial -->
         <div id="events-page" class="page">
-            <h2 class="section-title">Événements Spéciaux</h2>
+            <h2 class="section-title">Événement Spécial</h2>
             
             <div class="countdown-timer" id="wednesday-countdown">
                 <h3>Temps restant pour le Mercredi Spécial:</h3>
@@ -1521,10 +1521,10 @@
             }
             
             // Vérification des préfixes selon l'opérateur
-            const prefix = phoneNumber.substring(0, 2);
+            const prefix = phoneNumber.substring(0, 2, 3);
             
             // Préfixes MTN Cameroon: 67, 68
-            const mtnPrefixes = ['67', '68'];
+            const mtnPrefixes = ['67', '68', '651'];
             // Préfixes Orange Cameroon: 65, 66, 69
             const orangePrefixes = ['65', '66', '69'];
             // Préfixes Camtel: 62, 63, 64
